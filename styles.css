@@ -1,46 +1,69 @@
-h1 {
-	text-align: center;
+/* Căn giữa nội dung trang */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 20px 0;
+/* Định dạng cho các thành phần */
+h1{
+  font-size: 64px;
+  font-weight: bold;
+  margin: 20;
+  color: rgb(42, 151, 165)
 }
 
-label, input, button {
-	margin: 5px;
+
+ h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
 }
+
+input[type="text"],
+input[type="number"],
+button {
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  /* border: none; */
+  border-radius: 4px;
+}
+
+.addBtn {
+  background-color: #26d45a;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+
 
 table {
-	border-collapse: collapse;
-	width: 100%;
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 20px;
 }
 
 th, td {
-	padding: 10px;
-	text-align: left;
-	border-bottom: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
 }
 
 th {
-	background-color: #f2f2f2;
+  background-color: #6C63FF;
+  color: #fff;
 }
 
-td:last-child {
-	text-align: center;
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
-button {
-	background-color: #4CAF50;
-	color: white;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-}
-
-button:hover {
-	background-color: #3e8e41;
+.totalPrice {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: blue;
 }

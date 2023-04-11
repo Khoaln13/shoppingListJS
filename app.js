@@ -21,6 +21,8 @@ function render() {
     td1.textContent = product.name;
     td2.textContent = '$' + product.price.toFixed(2);
     deleteButton.textContent = 'Delete';
+    deleteButton.style.backgroundColor = "#e75151";
+    deleteButton.style.cursor = "pointer";
     deleteButton.addEventListener('click', () => {
       products.splice(index, 1);
       render();
