@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping List</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>Shopping List</h1>
+	<form>
+		<label for="product-name">Product Name:</label>
+		<input type="text" id="product-name" required>
+
+		<label for="price">Price:</label>
+		<input type="number" id="price" required>
+
+		<button type="submit" id="add-item">Add Item</button>
+	</form>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Product Name</th>
+				<th>Price</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody id="shopping-list">
+		</tbody>
+	</table>
+
+	<p>Total: $<span id="total-price">0</span></p>
+
+	<script src="app.js"></script>
+</body>
+</html>
